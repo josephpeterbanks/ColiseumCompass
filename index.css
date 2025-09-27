@@ -64,9 +64,19 @@ input[type="text"] {
 }
 
 .seat.highlight {
-  fill: rgba(255,255,255,0.75);
-  stroke: #FFF;
-  stroke-width: 2;
+	fill: rgba(255,255,255,1);
+	stroke: #FFF;
+	stroke-width: 5;
+	animation: flash 0.8s ease-in-out 0s infinite;
+}
+
+@keyframes flash {
+	0%, 100% {
+		fill: #ffffff00;
+	}
+	50% {
+		fill: #ffffffff;
+	}
 }
 
 .seat {

@@ -773,3 +773,9 @@ function highlightSeat() {
 seatInput.addEventListener('input', () => {
 	highlightSeat();
 });
+
+seatInput.addEventListener('keydown', (e) => {
+	if (e.key === 'Enter') {
+		seatInput.blur();
+	}
+});
