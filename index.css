@@ -95,3 +95,7 @@ input[type="text"] {
 	font-size: 16px;
 	color: #2D2D2D;
 }
+
+.map, .mapcontainer {
+  touch-action: none;   /* let svg-pan-zoom receive pinch/drag */
+}
