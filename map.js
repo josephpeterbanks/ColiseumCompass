@@ -68,7 +68,7 @@ const panZoom = svgPanZoom('#map', {
     center: true,
 	mouseWheelZoomEnabled: true,
 	minZoom: 1,
-	maxZoom: 5,
+	maxZoom: 8,
 	zoomScaleSensitivity: 0.2
 });
 
