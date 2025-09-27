@@ -47,11 +47,13 @@ input[type="text"] {
 }
 
 .mapcontainer {
-  width: min(95vw, 1000px);
+  width: 95vw;
+  height: 40vh;              /* fixed size */
+  max-width: 100%;
+  overflow: hidden;          /* don't allow page scroll */
+  border: 1px solid #333;    /* optional for testing */
+  touch-action: none;
   margin-bottom: 10px;
-  aspect-ratio: 4960 / 2000;
-  max-height: 40dvh;
-  display: block;
 }
 
 .map {
