@@ -76,3 +76,6 @@ const ro = new ResizeObserver(() => {
 	panZoom.center();
 });
 ro.observe(container);
+
+const svgEl = document.getElementById('map');
+svgEl.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
