@@ -95,3 +95,35 @@ input[type="text"] {
 	font-size: 16px;
 	color: #2D2D2D;
 }
+
+.zoom-slider-container {
+  width: 800px;;
+  max-width: 80vw;
+  margin-bottom: 10px;
+}
+
+#zoom-slider {
+  width: 100%;
+  appearance: none;
+  height: 6px;
+  background: #2d2d2d;
+  border-radius: 5px;
+  outline: none;
+}
+
+#zoom-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #D8D8D8;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#zoom-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #D8D8D8;
+  border-radius: 50%;
+  cursor: pointer;
+}

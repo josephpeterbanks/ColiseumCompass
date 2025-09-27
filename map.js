@@ -64,10 +64,21 @@ function unhighlightCell() {
 
 const panZoom = svgPanZoom('#map', {
     zoomEnabled: true,
-	controlIconsEnabled: true,
 	fit: true,
     center: true,
-	mouseWheelZoomEnabled: true
+	mouseWheelZoomEnabled: true,
+	minZoom: 1,
+	maxZoom: 5
+});
+
+const slider = document.getElementById('zoom-slider');
+
+slider.addEventListener('input', () => {
+	panZoom.zoom(parseFloat(slider.value));
+});
+
+panZoom.setOnZoom(function(zoomLevel) {
+	slider.value = zoomLevel.toFixed(2);
 });
 
 const container = document.querySelector('.mapcontainer');
