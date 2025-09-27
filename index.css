@@ -95,3 +95,8 @@ input[type="text"] {
 	font-size: 16px;
 	color: #2D2D2D;
 }
+
+.mapcontainer, svg {
+  touch-action: none;
+  -ms-touch-action: none;
+}

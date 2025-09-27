@@ -112,7 +112,7 @@ eventsHandler = {
 	})
 
 	// Prevent moving the page on some devices when panning over SVG
-	options.svgElement.addEventListener('touchmove', function(e){ e.preventDefault(); });
+	options.svgElement.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
   }
 
 , destroy: function(){
