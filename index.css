@@ -47,13 +47,11 @@ input[type="text"] {
 }
 
 .mapcontainer {
-  width: 95vw;
-  height: 40vh;              /* fixed size */
-  max-width: 100%;
-  overflow: hidden;          /* don't allow page scroll */
-  border: 1px solid #333;    /* optional for testing */
-  touch-action: none;
+  width: min(95vw, 1000px);
   margin-bottom: 10px;
+  aspect-ratio: 4960 / 2000;
+  max-height: 40dvh;
+  display: block;
 }
 
 .map {
@@ -96,9 +94,4 @@ input[type="text"] {
 	text-align: center;
 	font-size: 16px;
 	color: #2D2D2D;
-}
-
-.mapcontainer, svg {
-  touch-action: none;
-  -ms-touch-action: none;
 }
