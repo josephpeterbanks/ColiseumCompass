@@ -68,13 +68,15 @@ const panZoom = svgPanZoom('#map', {
     center: true,
 	mouseWheelZoomEnabled: true,
 	minZoom: 1,
-	maxZoom: 5
+	maxZoom: 5,
+	zoomScaleSensitivity: 0.2
 });
 
 const slider = document.getElementById('zoom-slider');
 
 slider.addEventListener('input', () => {
 	panZoom.zoom(parseFloat(slider.value));
+	if (slider.value == 1) panZoom.center();
 });
 
 panZoom.setOnZoom(function(zoomLevel) {
