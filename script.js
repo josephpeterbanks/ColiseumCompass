@@ -1,3 +1,12 @@
+const dressImage = new Image();
+dressImage.src = 'DressAnnotated.png';
+
+const upperImage = new Image();
+upperImage.src = 'UpperAnnotated.png';
+
+const balconyImage = new Image();
+balconyImage.src = 'BalconyAnnotated.png';
+
 const SEAT_RULES = {
 "stalls": {
 	"rows": [
