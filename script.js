@@ -798,3 +798,7 @@ seatInput.addEventListener('keydown', (e) => {
 		seatInput.blur();
 	}
 });
+
+seatInput.addEventListener('focus', function() {
+	this.value = '';
+});
