@@ -36,7 +36,9 @@
 	</svg>
 </div>
 <div class="zoom-slider-container">
-	<input type="range" id="zoom-slider" min="1" max="8" step="0.01" value="1">
+	<label class="zoom-label" for="zoom-slider">Reset</label>
+	<input type="range" class="zoom-slider" id="zoom-slider" min="1" max="8" step="0.01" value="1">
+	<label class="zoom-label" for="zoom-slider">Zoom</label>
 </div>
 <div class="routecontainer">
 	<div id="route" class="route">
@@ -45,8 +47,12 @@
 
 <div id="version" class="version">
 	<img src="Logo.png" class="logo">
-	Made by Joe Banks<br>
-	v2.0
+	v2.1<br>
+	Changes:<br>
+	- Reworked zoom controls<br>
+	- Auto-pans to seat<br>
+	<br>
+	Made by Joe Banks
 </div>
 
 <script src="svg-pan-zoom.min.js"></script>

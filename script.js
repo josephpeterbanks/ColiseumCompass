@@ -417,9 +417,6 @@ levelSelect.addEventListener("change", (event) => {
 		"balcony": "BalconyAnnotated.png"
 	}[value]);
 	highlightSeat();
-	panZoom.resize();
-	panZoom.fit();
-	panZoom.center();
 });
 
 function addTextToRoute(t, col) {

@@ -103,13 +103,16 @@ input[type="text"] {
 }
 
 .zoom-slider-container {
-	width: 800px;;
-	max-width: 80vw;
+	width: min(95vw, 1000px);
 	margin-bottom: 10px;
+	display: flex;
+	gap: 20px;
 }
 
-#zoom-slider {
+.zoom-slider {
 	width: 100%;
+	display: block;
+	margin: auto;
 	appearance: none;
 	height: 6px;
 	background: #2d2d2d;
@@ -117,7 +120,7 @@ input[type="text"] {
 	outline: none;
 }
 
-#zoom-slider::-webkit-slider-thumb {
+.zoom-slider::-webkit-slider-thumb {
 	appearance: none;
 	width: 20px;
 	height: 20px;
@@ -126,12 +129,17 @@ input[type="text"] {
 	cursor: pointer;
 }
 
-#zoom-slider::-moz-range-thumb {
+.zoom-slider::-moz-range-thumb {
 	width: 20px;
 	height: 20px;
 	background: #D8D8D8;
 	border-radius: 50%;
 	cursor: pointer;
+}
+
+.zoom-label {
+	width: 50px;
+	color: #2D2D2D;
 }
 
 .spin-page {
