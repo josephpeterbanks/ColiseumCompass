@@ -772,6 +772,12 @@ function highlightSeat() {
 	
 	const parsed = parseSeatCode(seatInput.value);
 	if (!parsed) {
+		if (seatInput.value.toLowerCase() == "spin") {
+			document.body.classList.toggle('spin-page');
+			setTimeout(() => {
+				document.body.classList.remove("spin-page");
+			}, 1500);
+		}
 		return;
 	}
 

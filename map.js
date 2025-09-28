@@ -51,6 +51,7 @@ function highlightCell(col, row) {
 		c.classList.add("highlight");
 		highlight_x = col;
 		highlight_y = row;
+		smoothCenterOn(col, row);
 	}
 	return c;
 }
@@ -90,3 +91,42 @@ const ro = new ResizeObserver(() => {
 	panZoom.center();
 });
 ro.observe(container);
+
+function smoothCenterOn(col, row, duration = 500) {
+	const sizes = panZoom.getSizes();
+	const view  = sizes.viewBox || { x: 0, y: 0 };
+	const svgX  = view.x + col * CELL_X + CELL_X / 2;
+	const svgY  = view.y + row * CELL_Y + CELL_Y / 2;
+
+	const realZoom   = sizes.realZoom;
+	const viewWidth  = sizes.width;
+	const viewHeight = sizes.height;
+
+	const start = panZoom.getPan();
+
+	const target = {
+	x: (viewWidth  / 2) - svgX * realZoom,
+	y: (viewHeight / 2) - svgY * realZoom
+	};
+
+	const dx = target.x - start.x;
+	const dy = target.y - start.y;
+
+	const startTime = performance.now();
+	const easeInOut = t => 0.5 - Math.cos(Math.PI * t) / 2; // smooth ease
+
+	// cancel any running animation
+	if (smoothCenterOn._raf) cancelAnimationFrame(smoothCenterOn._raf);
+
+	function step(now) {
+		const t = Math.min((now - startTime) / duration, 1);
+		const e = easeInOut(t);
+		panZoom.pan({ x: start.x + dx * e, y: start.y + dy * e });
+		if (t < 1) {
+			smoothCenterOn._raf = requestAnimationFrame(step);
+		} else {
+			smoothCenterOn._raf = null;
+		}
+	}
+	smoothCenterOn._raf = requestAnimationFrame(step);
+}
