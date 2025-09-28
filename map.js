@@ -95,7 +95,7 @@ ro.observe(container);
 function smoothCenterOn(col, row, duration = 500) {
 	const sizes = panZoom.getSizes();
 	const view  = sizes.viewBox || { x: 0, y: 0 };
-	const svgX  = view.x + col * CELL_X + CELL_X / 2;
+	const svgX  = view.x + col * CELL_X + CELL_X;
 	const svgY  = view.y + row * CELL_Y + CELL_Y / 2;
 
 	const realZoom   = sizes.realZoom;
