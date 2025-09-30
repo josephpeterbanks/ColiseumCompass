@@ -51,7 +51,7 @@ function highlightCell(col, row) {
 		c.classList.add("highlight");
 		highlight_x = col;
 		highlight_y = row;
-		smoothCenterOn(col, row);
+		smoothCenterOnCoords(col, row);
 	}
 	return c;
 }
@@ -95,8 +95,8 @@ ro.observe(container);
 function smoothCenterOn(col, row, duration = 500) {
 	const sizes = panZoom.getSizes();
 	const view  = sizes.viewBox || { x: 0, y: 0 };
-	const svgX  = view.x + col * CELL_X + CELL_X;
-	const svgY  = view.y + row * CELL_Y + CELL_Y / 2;
+	const svgX  = view.x + col;
+	const svgY  = view.y + row;
 
 	const realZoom   = sizes.realZoom;
 	const viewWidth  = sizes.width;
@@ -129,4 +129,14 @@ function smoothCenterOn(col, row, duration = 500) {
 		}
 	}
 	smoothCenterOn._raf = requestAnimationFrame(step);
+}
+
+function smoothCenterOnCoords(col, row) {
+	const svgX  = col * CELL_X + CELL_X;
+	const svgY  = row * CELL_Y + CELL_Y / 2;
+	smoothCenterOn(svgX, svgY);
+}
+
+function smoothCenterOnCenter() {
+	smoothCenterOn(VIEW_W / 2, VIEW_H / 2);
 }

@@ -9,6 +9,9 @@
    viewBox="0 0 4960 1280"
    sodipodi:docname="Upper.svg"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   inkscape:export-filename="..\UpperAnnotated.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -33,9 +36,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="true"
-     inkscape:zoom="0.25318986"
-     inkscape:cx="3635.6116"
-     inkscape:cy="665.50848"
+     inkscape:zoom="0.12659493"
+     inkscape:cx="1773.3728"
+     inkscape:cy="-430.50697"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -6231,6 +6234,26 @@
              x="3039.583"
              y="872.93201"
              id="tspan2-2">Side</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-weight:600;font-size:28px;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#1a1a1a;fill-opacity:1"
+           x="3079.2729"
+           y="289.42499"
+           id="text3"><tspan
+             sodipodi:role="line"
+             id="tspan3"
+             x="3079.2729"
+             y="289.42499">Pillar</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-weight:600;font-size:28px;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#1a1a1a;fill-opacity:1"
+           x="7799.2729"
+           y="289.42499"
+           id="text3-8"><tspan
+             sodipodi:role="line"
+             id="tspan3-2"
+             x="7799.2729"
+             y="289.42499">Pillar</tspan></text>
       </g>
     </g>
   </g>

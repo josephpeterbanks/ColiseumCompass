@@ -407,6 +407,7 @@ const route = document.getElementById("route");
 
 levelSelect.addEventListener("change", (event) => {
 	const value = event.target.value;
+	levelSelect.blur();
 
 	unhighlightCell();
 	const bg = document.querySelector("#map image");
@@ -769,6 +770,7 @@ function highlightSeat() {
 	
 	const parsed = parseSeatCode(seatInput.value);
 	if (!parsed) {
+		smoothCenterOnCenter();
 		if (seatInput.value.toLowerCase() == "spin") {
 			document.body.classList.toggle('spin-page');
 			setTimeout(() => {
@@ -783,6 +785,8 @@ function highlightSeat() {
 	if (pos) {
 		findBestRoute(level, parsed.row, parsed.seat);
 		highlightCell(pos.col, pos.row);
+	} else {
+		smoothCenterOnCenter();
 	}
 }
 
@@ -798,4 +802,5 @@ seatInput.addEventListener('keydown', (e) => {
 
 seatInput.addEventListener('focus', function() {
 	this.value = '';
+	highlightSeat();
 });
