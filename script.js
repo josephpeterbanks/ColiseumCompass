@@ -10,100 +10,100 @@ balconyImage.src = 'BalconyAnnotated.png';
 const SEAT_RULES = {
 "stalls": {
 	"rows": [
-		{ "label": "A", "startRow": 0, "startCol": 87, "count": 25,
+		{ "label": "A", "startSeat": 1, "startRow": 0, "startCol": 87, "count": 25,
         "gaps": [
 			{ "afterSeat": 5, "skipCols": 2, "changeRow": 0 }, 
 			{ "afterSeat": 20, "skipCols": 2, "changeRow": 0 }
 		] },
 			
-		{ "label": "B", "startRow": 1, "startCol": 98, "count": 36,
+		{ "label": "B", "startSeat": 1, "startRow": 1, "startCol": 98, "count": 36,
         "gaps": [
 			{ "afterSeat": 10, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 26, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "C", "startRow": 2, "startCol": 101, "count": 39,
+		{ "label": "C", "startSeat": 1, "startRow": 2, "startCol": 101, "count": 39,
         "gaps": [
 			{ "afterSeat": 11, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 28, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "D", "startRow": 3, "startCol": 104, "count": 42,
+		{ "label": "D", "startSeat": 1, "startRow": 3, "startCol": 104, "count": 42,
         "gaps": [
 			{ "afterSeat": 12, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 30, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "E", "startRow": 4, "startCol": 103, "count": 39,
+		{ "label": "E", "startSeat": 1, "startRow": 4, "startCol": 103, "count": 39,
         "gaps": [
 			{ "afterSeat": 11, "skipCols": 4, "changeRow": 0 },
 			{ "afterSeat": 28, "skipCols": 4, "changeRow": 0 }
         ] },
 					
-		{ "label": "F", "startRow": 5, "startCol": 104, "count": 40,
+		{ "label": "F", "startSeat": 1, "startRow": 5, "startCol": 104, "count": 40,
         "gaps": [
 			{ "afterSeat": 11, "skipCols": 4, "changeRow": 0 },
 			{ "afterSeat": 29, "skipCols": 4, "changeRow": 0 }
         ] },
 					
-		{ "label": "G", "startRow": 6, "startCol": 105, "count": 41,
+		{ "label": "G", "startSeat": 1, "startRow": 6, "startCol": 105, "count": 41,
         "gaps": [
 			{ "afterSeat": 11, "skipCols": 4, "changeRow": 0 },
 			{ "afterSeat": 30, "skipCols": 4, "changeRow": 0 }
         ] },
 					
-		{ "label": "H", "startRow": 7, "startCol": 106, "count": 42,
+		{ "label": "H", "startSeat": 1, "startRow": 7, "startCol": 106, "count": 42,
         "gaps": [
 			{ "afterSeat": 11, "skipCols": 4, "changeRow": 0 },
 			{ "afterSeat": 31, "skipCols": 4, "changeRow": 0 }
         ] },
 					
-		{ "label": "J", "startRow": 8, "startCol": 103, "count": 37,
+		{ "label": "J", "startSeat": 1, "startRow": 8, "startCol": 103, "count": 37,
         "gaps": [
 			{ "afterSeat": 9, "skipCols": 6, "changeRow": 0 },
 			{ "afterSeat": 28, "skipCols": 6, "changeRow": 0 }
         ] },
 					
-		{ "label": "K", "startRow": 9, "startCol": 102, "count": 36,
+		{ "label": "K", "startSeat": 1, "startRow": 9, "startCol": 102, "count": 36,
         "gaps": [
 			{ "afterSeat": 8, "skipCols": 6, "changeRow": 0 },
 			{ "afterSeat": 28, "skipCols": 6, "changeRow": 0 }
         ] },
 					
-		{ "label": "L", "startRow": 10, "startCol": 101, "count": 35,
+		{ "label": "L", "startSeat": 1, "startRow": 10, "startCol": 101, "count": 35,
         "gaps": [
 			{ "afterSeat": 7, "skipCols": 6, "changeRow": 0 },
 			{ "afterSeat": 28, "skipCols": 6, "changeRow": 0 }
         ] },
 					
-		{ "label": "M", "startRow": 11, "startCol": 98, "count": 32,
+		{ "label": "M", "startSeat": 1, "startRow": 11, "startCol": 98, "count": 32,
         "gaps": [
 			{ "afterSeat": 5, "skipCols": 6, "changeRow": 0 },
 			{ "afterSeat": 27, "skipCols": 6, "changeRow": 0 }
         ] },
 					
-		{ "label": "N", "startRow": 12, "startCol": 95, "count": 29,
+		{ "label": "N", "startSeat": 1, "startRow": 12, "startCol": 95, "count": 29,
         "gaps": [
 			{ "afterSeat": 3, "skipCols": 6, "changeRow": 0 },
 			{ "afterSeat": 26, "skipCols": 6, "changeRow": 0 }
         ] },
 					
-		{ "label": "O", "startRow": 13, "startCol": 80, "count": 20,
+		{ "label": "O", "startSeat": 5, "startRow": 13, "startCol": 80, "count": 20,
         "gaps": [
         ] },
 					
-		{ "label": "P", "startRow": 14, "startCol": 77, "count": 17,
+		{ "label": "P", "startSeat": 5, "startRow": 14, "startCol": 77, "count": 17,
         "gaps": [
         ] },
 					
-		{ "label": "Q", "startRow": 15, "startCol": 70, "count": 10,
+		{ "label": "Q", "startSeat": 1, "startRow": 15, "startCol": 70, "count": 10,
         "gaps": [
         ] }
     ]
 },
 "dress-circle": {
 	"rows": [
-		{ "label": "A", "startRow": 0, "startCol": 122, "count": 72,
+		{ "label": "A", "startSeat": 1, "startRow": 0, "startCol": 122, "count": 72,
         "gaps": [
 			{ "afterSeat": 14, "skipCols": -12, "changeRow": 3 }, 
 			{ "afterSeat": 28, "skipCols": 2, "changeRow": 0 },
@@ -111,7 +111,7 @@ const SEAT_RULES = {
 			{ "afterSeat": 58, "skipCols": -12, "changeRow": -3 }
 		] },
 			
-		{ "label": "B", "startRow": 1, "startCol": 122, "count": 61,
+		{ "label": "B", "startSeat": 1, "startRow": 1, "startCol": 122, "count": 61,
         "gaps": [
 			{ "afterSeat": 8, "skipCols": -1, "changeRow": 3 },
 			{ "afterSeat": 22, "skipCols": 2, "changeRow": 0 },
@@ -119,7 +119,7 @@ const SEAT_RULES = {
 			{ "afterSeat": 53, "skipCols": -1, "changeRow": -3 }
         ] },
 					
-		{ "label": "C", "startRow": 2, "startCol": 122, "count": 52,
+		{ "label": "C", "startSeat": 1, "startRow": 2, "startCol": 122, "count": 52,
         "gaps": [
 			{ "afterSeat": 2, "skipCols": 8, "changeRow": 3 },
 			{ "afterSeat": 17, "skipCols": 2, "changeRow": 0 },
@@ -127,7 +127,7 @@ const SEAT_RULES = {
 			{ "afterSeat": 50, "skipCols": 8, "changeRow": -3 }
         ] },
 					
-		{ "label": "D", "startRow": 3, "startCol": 122, "count": 53,
+		{ "label": "D", "startSeat": 1, "startRow": 3, "startCol": 122, "count": 53,
         "gaps": [
 			{ "afterSeat": 1, "skipCols": 7, "changeRow": 3 },
 			{ "afterSeat": 17, "skipCols": 2, "changeRow": 0 },
@@ -135,19 +135,19 @@ const SEAT_RULES = {
 			{ "afterSeat": 52, "skipCols": 7, "changeRow": -3 }
         ] },
 					
-		{ "label": "E", "startRow": 7, "startCol": 118, "count": 56,
+		{ "label": "E", "startSeat": 1, "startRow": 7, "startCol": 118, "count": 56,
         "gaps": [
 			{ "afterSeat": 18, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 38, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "F", "startRow": 8, "startCol": 121, "count": 59,
+		{ "label": "F", "startSeat": 1, "startRow": 8, "startCol": 121, "count": 59,
         "gaps": [
 			{ "afterSeat": 19, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 40, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "G", "startRow": 9, "startCol": 122, "count": 58,
+		{ "label": "G", "startSeat": 1, "startRow": 9, "startCol": 122, "count": 58,
         "gaps": [
 			{ "afterSeat": 1, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 18, "skipCols": 2, "changeRow": 0 },
@@ -155,25 +155,25 @@ const SEAT_RULES = {
 			{ "afterSeat": 57, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "H", "startRow": 10, "startCol": 119, "count": 57,
+		{ "label": "H", "startSeat": 1, "startRow": 10, "startCol": 119, "count": 57,
         "gaps": [
 			{ "afterSeat": 17, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 40, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "J", "startRow": 11, "startCol": 120, "count": 58,
+		{ "label": "J", "startSeat": 1, "startRow": 11, "startCol": 120, "count": 58,
         "gaps": [
 			{ "afterSeat": 17, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 41, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "K", "startRow": 12, "startCol": 119, "count": 57,
+		{ "label": "K", "startSeat": 1, "startRow": 12, "startCol": 119, "count": 57,
         "gaps": [
 			{ "afterSeat": 16, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 41, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "L", "startRow": 13, "startCol": 116, "count": 52,
+		{ "label": "L", "startSeat": 1, "startRow": 13, "startCol": 116, "count": 52,
         "gaps": [
 			{ "afterSeat": 14, "skipCols": 4, "changeRow": 0 },
 			{ "afterSeat": 38, "skipCols": 4, "changeRow": 0 }
@@ -182,31 +182,31 @@ const SEAT_RULES = {
 },
 "upper-circle": {
 	"rows": [
-		{ "label": "A", "startRow": 0, "startCol": 116, "count": 48,
+		{ "label": "A", "startSeat": 1, "startRow": 0, "startCol": 116, "count": 48,
         "gaps": [
 			{ "afterSeat": 16, "skipCols": 8, "changeRow": 0 }, 
 			{ "afterSeat": 32, "skipCols": 8, "changeRow": 0 }
 		] },
 			
-		{ "label": "B", "startRow": 1, "startCol": 118, "count": 51,
+		{ "label": "B", "startSeat": 1, "startRow": 1, "startCol": 118, "count": 51,
         "gaps": [
 			{ "afterSeat": 17, "skipCols": 7, "changeRow": 0 },
 			{ "afterSeat": 34, "skipCols": 7, "changeRow": 0 }
         ] },
 					
-		{ "label": "C", "startRow": 2, "startCol": 122, "count": 56,
+		{ "label": "C", "startSeat": 1, "startRow": 2, "startCol": 122, "count": 56,
         "gaps": [
 			{ "afterSeat": 19, "skipCols": 6, "changeRow": 0 },
 			{ "afterSeat": 37, "skipCols": 6, "changeRow": 0 }
         ] },
 					
-		{ "label": "D", "startRow": 3, "startCol": 122, "count": 57,
+		{ "label": "D", "startSeat": 1, "startRow": 3, "startCol": 122, "count": 57,
         "gaps": [
 			{ "afterSeat": 19, "skipCols": 5, "changeRow": 0 },
 			{ "afterSeat": 38, "skipCols": 5, "changeRow": 0 }
         ] },
 					
-		{ "label": "E", "startRow": 4, "startCol": 122, "count": 56,
+		{ "label": "E", "startSeat": 1, "startRow": 4, "startCol": 122, "count": 56,
         "gaps": [
 			{ "afterSeat": 1, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 18, "skipCols": 4, "changeRow": 0 },
@@ -214,37 +214,37 @@ const SEAT_RULES = {
 			{ "afterSeat": 55, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "F", "startRow": 5, "startCol": 122, "count": 57,
+		{ "label": "F", "startSeat": 1, "startRow": 5, "startCol": 122, "count": 57,
         "gaps": [
 			{ "afterSeat": 18, "skipCols": 5, "changeRow": 0 },
 			{ "afterSeat": 39, "skipCols": 5, "changeRow": 0 }
         ] },
 					
-		{ "label": "G", "startRow": 6, "startCol": 122, "count": 58,
+		{ "label": "G", "startSeat": 1, "startRow": 6, "startCol": 122, "count": 58,
         "gaps": [
 			{ "afterSeat": 18, "skipCols": 4, "changeRow": 0 },
 			{ "afterSeat": 40, "skipCols": 4, "changeRow": 0 }
         ] },
 					
-		{ "label": "H", "startRow": 7, "startCol": 120, "count": 57,
+		{ "label": "H", "startSeat": 1, "startRow": 7, "startCol": 120, "count": 57,
         "gaps": [
 			{ "afterSeat": 17, "skipCols": 3, "changeRow": 0 },
 			{ "afterSeat": 40, "skipCols": 3, "changeRow": 0 }
         ] },
 					
-		{ "label": "J", "startRow": 8, "startCol": 120, "count": 58,
+		{ "label": "J", "startSeat": 1, "startRow": 8, "startCol": 120, "count": 58,
         "gaps": [
 			{ "afterSeat": 17, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 41, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "K", "startRow": 9, "startCol": 118, "count": 56,
+		{ "label": "K", "startSeat": 1, "startRow": 9, "startCol": 118, "count": 56,
         "gaps": [
 			{ "afterSeat": 16, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 40, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "L", "startRow": 10, "startCol": 118, "count": 56,
+		{ "label": "L", "startSeat": 1, "startRow": 10, "startCol": 118, "count": 56,
         "gaps": [
 			{ "afterSeat": 16, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 40, "skipCols": 2, "changeRow": 0 }
@@ -253,7 +253,7 @@ const SEAT_RULES = {
 },
 "balcony": {
 	"rows": [
-		{ "label": "A", "startRow": 0, "startCol": 122, "count": 46,
+		{ "label": "A", "startSeat": 1, "startRow": 0, "startCol": 122, "count": 46,
         "gaps": [
 			{ "afterSeat": 5, "skipCols": 5, "changeRow": 0 }, 
 			{ "afterSeat": 11, "skipCols": 4, "changeRow": 0 },
@@ -263,7 +263,7 @@ const SEAT_RULES = {
 			{ "afterSeat": 41, "skipCols": 5, "changeRow": 0 }
 		] },
 			
-		{ "label": "B", "startRow": 1, "startCol": 122, "count": 49,
+		{ "label": "B", "startSeat": 1, "startRow": 1, "startCol": 122, "count": 49,
         "gaps": [
 			{ "afterSeat": 4, "skipCols": 4, "changeRow": 0 },
 			{ "afterSeat": 11, "skipCols": 3, "changeRow": 0 },
@@ -273,7 +273,7 @@ const SEAT_RULES = {
 			{ "afterSeat": 45, "skipCols": 4, "changeRow": 0 }
         ] },
 					
-		{ "label": "C", "startRow": 2, "startCol": 122, "count": 47,
+		{ "label": "C", "startSeat": 1, "startRow": 2, "startCol": 122, "count": 47,
         "gaps": [
 			{ "afterSeat": 3, "skipCols": 5, "changeRow": 0 },
 			{ "afterSeat": 10, "skipCols": 4, "changeRow": 0 },
@@ -283,7 +283,7 @@ const SEAT_RULES = {
 			{ "afterSeat": 44, "skipCols": 5, "changeRow": 0 }
         ] },
 					
-		{ "label": "D", "startRow": 3, "startCol": 112, "count": 44,
+		{ "label": "D", "startSeat": 1, "startRow": 3, "startCol": 112, "count": 44,
         "gaps": [
 			{ "afterSeat": 7, "skipCols": 3, "changeRow": 0 },
 			{ "afterSeat": 17, "skipCols": 5, "changeRow": 0 },
@@ -291,7 +291,7 @@ const SEAT_RULES = {
 			{ "afterSeat": 37, "skipCols": 3, "changeRow": 0 }
         ] },
 					
-		{ "label": "E", "startRow": 4, "startCol": 115, "count": 49,
+		{ "label": "E", "startSeat": 1, "startRow": 4, "startCol": 115, "count": 49,
         "gaps": [
 			{ "afterSeat": 8, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 19, "skipCols": 4, "changeRow": 0 },
@@ -299,7 +299,7 @@ const SEAT_RULES = {
 			{ "afterSeat": 41, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "F", "startRow": 5, "startCol": 118, "count": 51,
+		{ "label": "F", "startSeat": 1, "startRow": 5, "startCol": 118, "count": 51,
         "gaps": [
 			{ "afterSeat": 9, "skipCols": 3, "changeRow": 0 },
 			{ "afterSeat": 20, "skipCols": 4, "changeRow": 0 },
@@ -307,7 +307,7 @@ const SEAT_RULES = {
 			{ "afterSeat": 42, "skipCols": 3, "changeRow": 0 }
         ] },
 					
-		{ "label": "G", "startRow": 6, "startCol": 119, "count": 54,
+		{ "label": "G", "startSeat": 1, "startRow": 6, "startCol": 119, "count": 54,
         "gaps": [
 			{ "afterSeat": 9, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 21, "skipCols": 3, "changeRow": 0 },
@@ -315,7 +315,7 @@ const SEAT_RULES = {
 			{ "afterSeat": 45, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "H", "startRow": 7, "startCol": 120, "count": 54,
+		{ "label": "H", "startSeat": 1, "startRow": 7, "startCol": 120, "count": 54,
         "gaps": [
 			{ "afterSeat": 9, "skipCols": 3, "changeRow": 0 },
 			{ "afterSeat": 21, "skipCols": 3, "changeRow": 0 },
@@ -323,7 +323,7 @@ const SEAT_RULES = {
 			{ "afterSeat": 45, "skipCols": 3, "changeRow": 0 }
         ] },
 					
-		{ "label": "J", "startRow": 8, "startCol": 117, "count": 53,
+		{ "label": "J", "startSeat": 1, "startRow": 8, "startCol": 117, "count": 53,
         "gaps": [
 			{ "afterSeat": 7, "skipCols": 2, "changeRow": 0 },
 			{ "afterSeat": 20, "skipCols": 2, "changeRow": 0 },
@@ -331,7 +331,7 @@ const SEAT_RULES = {
 			{ "afterSeat": 46, "skipCols": 2, "changeRow": 0 }
         ] },
 					
-		{ "label": "K", "startRow": 9, "startCol": 116, "count": 51,
+		{ "label": "K", "startSeat": 1, "startRow": 9, "startCol": 116, "count": 51,
         "gaps": [
 			{ "afterSeat": 6, "skipCols": 3, "changeRow": 0 },
 			{ "afterSeat": 19, "skipCols": 2, "changeRow": 0 },
@@ -357,9 +357,9 @@ const layout = {
 		"L": { aisles: [7.5, 28.5, 35.5], outer: false},
 		"M": { aisles: [5.5, 27.5, 32.5], outer: false},
 		"N": { aisles: [3.5, 26.5, 29.5], outer: false},
-		"O": { aisles: [20.5], outer: true},
-		"P": { aisles: [17.5], outer: true},
-		"Q": { aisles: [10.5], outer: true}
+		"O": { aisles: [20.5], outer: "left"},
+		"P": { aisles: [17.5], outer: "left"},
+		"Q": { aisles: [10.5], outer: "left"}
 	},
 	"dress-circle": {
 		"A": { aisles: [14.5, 28.5, 44.5, 58.5, 72.5], outer: "extend"},
@@ -412,7 +412,7 @@ levelSelect.addEventListener("change", (event) => {
 	unhighlightCell();
 	const bg = document.querySelector("#map image");
 	bg.setAttribute("href", {
-		"stalls": "StallsAnnotated.png",
+		"stalls": "StallsSDAnnotated.png",
 		"dress-circle": "DressAnnotated.png",
 		"upper-circle": "UpperAnnotated.png",
 		"balcony": "BalconyAnnotated.png"
@@ -747,8 +747,8 @@ function resolveSeat(level, rowLabel, seatNum) {
 	const rowCfg = levelCfg.rows.find(r => r.label.toUpperCase() === rowLabel.toUpperCase());
 	if (!rowCfg) return null;
 
-	const { startRow, startCol, count, gaps = [] } = rowCfg;
-	if (seatNum < 1 || seatNum > count) return null;
+	const { startSeat, startRow, startCol, count, gaps = [] } = rowCfg;
+	if (seatNum < startSeat || seatNum > count) return null;
 
 	let col = startCol - (seatNum - 1) * 2;
 	let row = startRow;
