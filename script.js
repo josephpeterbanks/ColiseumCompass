@@ -776,6 +776,8 @@ function highlightSeat() {
 			setTimeout(() => {
 				document.body.classList.remove("spin-page");
 			}, 1500);
+		} else if (seatInput.value.toLowerCase() == "claude") {
+			openOverlay();
 		}
 		return;
 	}
@@ -804,3 +806,22 @@ seatInput.addEventListener('focus', function() {
 	this.value = '';
 	highlightSeat();
 });
+
+const overlay = document.getElementById('overlay');
+
+function openOverlay(html) {
+	if (html !== undefined) {
+		const box = overlay.querySelector('.overlay-content');
+		box.innerHTML = html + '<br><button id="overlay-close" class="overlay-btn">Close</button>';
+		overlay.querySelector('#overlay-close').addEventListener('click', closeOverlay);
+	}
+	overlay.classList.add('overlay--on');
+	overlay.setAttribute('aria-hidden', 'false');
+	document.body.classList.add('body--lock');
+}
+
+function closeOverlay() {
+	overlay.classList.remove('overlay--on');
+	overlay.setAttribute('aria-hidden', 'true');
+	document.body.classList.remove('body--lock');
+}
